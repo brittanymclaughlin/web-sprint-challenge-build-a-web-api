@@ -61,10 +61,19 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. The core features of Node.js and Express and why they are useful.
-1. Understand and explain the use of Middleware?
-1. The basic principles of the REST architectural style.
-1. Understand and explain the use of Express Routers.
-1. Describe tooling used to manually test the correctness of an API.
+    #### The core features of Node.js and the Express framework are the ability to set up middlewares to respond to HTTP requests, defines a routing table which can be used to perform different actions based on URL, and allows for dynamic rending HTML pages. Express is a minimal and flexible Node framework that has a lot of robust features of web and mobile applications. It is also used by a lot of developers.
+
+2. Understand and explain the use of Middleware?
+    #### Middleware are functions that are allowed access to the request and response object along with the next function in the request-response cycle. Middleware allows for a variety of functionality to a backend server by being able to use and manipulate the req and res data.
+
+3. The basic principles of the REST architectural style.
+    #### The basic principles of the REST architectural style are: Client-server ( separates the user interface concerns from the data storage concerns), Stateless ( Every request from the client to the server must contain all the information needed to understand the request. Session state is kept completely on the client side ), Cacheable ( requires that the data within a response to a request be labeled as cacheable or non-cacheable), uniform interface ( multiple architectural constraints are needed to guide the behavior of components ), layered system ( allows architecture to be composed of hierarchical laters by constraining component behavior), and code on demand which is optional. The uniform interface refers to CRUD which is create, read, update and delete (aka as POST, GET, PUT and DELETE respectively).
+
+4. Understand and explain the use of Express Routers.
+    #### The use of Express routers is to allow routes/endpoints to be created so that specific actions can be completed on those endpoints/URLs. 
+
+5. Describe tooling used to manually test the correctness of an API.
+    #### The tools used to manually test the correctness of an API, simulate an axios request from a client side application to the backend server to receive the data that the server is sending back as a response. It allows you to test your endpoints and see if they are behaving how they are supposed to with the information that the server needs. You can also check the ability for errors by purposefully not giving the server the information that it needs or by making it incorrect so it is forced to give you an error. That way you know it will react in the way that you want when it is in use by the client.
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
@@ -72,12 +81,12 @@ You are expected to be able to answer questions in these areas. Your responses c
 
 ### Task 1: Project Set Up
 
-- [ ] Create a forked copy of this project
-- [ ] Add your team lead as collaborator on Github
-- [ ] Clone your OWN version of the repository (Not Lambda's by mistake!)
-- [ ] Create a new branch: git checkout -b `<firstName-lastName>`.
-- [ ] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
-- [ ] Push commits: git push origin `<firstName-lastName>`
+- [x] Create a forked copy of this project
+- [x] Add your team lead as collaborator on Github
+- [x] Clone your OWN version of the repository (Not Lambda's by mistake!)
+- [x] Create a new branch: git checkout -b `<firstName-lastName>`.
+- [x] Implement the project on your newly created `<firstName-lastName>` branch, committing changes regularly
+- [x] Push commits: git push origin `<firstName-lastName>`
 
 ### Task 2: Project Requirements
 
@@ -85,16 +94,16 @@ Your finished project must include all of the following requirements:
 
 #### NPM Scripts
 
-- [ ] An _npm script_ named _"server"_ that uses `nodemon`to run the API server.
-- [ ] Use _nodemon_ as a development time dependency only that is not deployed to production.
-- [ ] An _npm script_ named _"start"_ that uses `node` to run the API server.
+- [x] An _npm script_ named _"server"_ that uses `nodemon`to run the API server.
+- [x] Use _nodemon_ as a development time dependency only that is not deployed to production.
+- [x] An _npm script_ named _"start"_ that uses `node` to run the API server.
 
 #### Build an API
 
-- [ ] Design and build endpoints for performing CRUD operations on _projects_ and _actions_. When adding an action, make sure the `project_id` provided belongs to an existing `project`. If you try to add an action with an `id` of 3 and there is no project with that `id` the database will return an error.
-- [ ] Add an endpoint for retrieving the list of actions for a project.
-- [ ] Use an HTTP client like `postman` or `insomnia` to test the API's endpoints.
-- [ ] Use Express Routers to organize the API's code.
+- [x] Design and build endpoints for performing CRUD operations on _projects_ and _actions_. When adding an action, make sure the `project_id` provided belongs to an existing `project`. If you try to add an action with an `id` of 3 and there is no project with that `id` the database will return an error.
+- [x] Add an endpoint for retrieving the list of actions for a project.
+- [x] Use an HTTP client like `postman` or `insomnia` to test the API's endpoints.
+- [x] Use Express Routers to organize the API's code.
 
 In your solution, it is essential that you follow best practices and produce clean and professional results. You will be scored on your adherence to proper code style and good organization. Schedule time to review, refine, and assess your work and perform basic professional polishing including spell-checking and grammar-checking on your work. It is better to submit a challenge that meets MVP than one that attempts too much and does not.
 
@@ -102,7 +111,7 @@ In your solution, it is essential that you follow best practices and produce cle
 
 After finishing your required elements, you can push your work further. These goals may or may not be things you have learned in this module but they build on the material you just studied. Time allowing, stretch your limits and see if you can deliver on the following optional goals:
 
-- [ ] Deploy the API to Heroku.
+- [x] Deploy the API to Heroku.
 - [ ] Configure the API to support environment variables.
 - [ ] Use middleware for validation of incoming data.
 
@@ -110,6 +119,6 @@ After finishing your required elements, you can push your work further. These go
 
 Follow these steps for completing your project.
 
-- [ ] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
-- [ ] Add your team lead as a reviewer on the pull-request
-- [ ] Your team lead will count the project as complete after receiving your pull-request
+- [x] Submit a Pull-Request to merge <firstName-lastName> Branch into master (student's Repo). **Please don't merge your own pull request**
+- [Why?] Add your team lead as a reviewer on the pull-request
+- [Really?] Your team lead will count the project as complete after receiving your pull-request

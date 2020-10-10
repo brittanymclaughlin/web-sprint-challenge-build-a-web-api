@@ -5,5 +5,6 @@ exports.seed = function(knex, Promise) {
       description:
         'Build and Awesome API Using Node.js and Express to Manage Projects and Actions GTD Style!',
     },
+    
   ]);
 };
